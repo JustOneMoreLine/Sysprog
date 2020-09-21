@@ -1,0 +1,57 @@
+Week 1 Notes
+
+Oracle VM VirtualBox
+ - can run through:
+	- Oracle VM VirtualBox
+	- putty
+	- or cmd "ssh user@localhost -p 6022"
+
+Shell:
+ - an interface to kernel
+ - example of shell(s):
+	- Bourne Shell
+	- Bourne Again Shell (bash)
+	- C Shell
+
+Filesystem Hierarchy Standard
+ - Linux distribution file and directories structure
+ - structure like:
+	/ : The root of directories
+	/bin : Contain essentials command binaries
+	/boot : Contains boot loader, files booted at stratup
+	/dev : Contain device files
+	/etc : Contain system configuration files
+	/home : Contains directories for users
+	/lib : Contain libraries for the essentials command binaries
+	/media : Contain removable media’s mount points
+	/mnt : Contains mounted filesystems
+	/opt : Contain application software packages
+	/proc : Contains process and kernel information in files
+	/root : Contains directories for root user.
+	/run : Contain runtime data
+	/sbin : Contain the essential system binaries
+	/srv : Contains site-specific files
+	/sys : Contains device and drivers information
+	/tmp : Contains temporary files
+	/usr : Contains read-only user data
+	/var : Contains dynamic variable files
+
+/proc command
+ - contains process and kernels info
+ - use it like reading files with cat
+
+(Absolute vs Relative) Path:
+ - Absolute
+	- The full path from root (/)
+ - Relative
+	- Like absolute, but the root is the current working directory
+
+(Application vs System) Programming
+ - Application
+	- Program to bridge between User and Hardware
+	- User-oriented
+	- To provide a service to user
+ - System
+	- Program to bridge between application/programmer and Hardware
+	- Programs develop around hardware utility and application/programmer's needs
+	- To give accessibility of hardware's utility to application/programmer
