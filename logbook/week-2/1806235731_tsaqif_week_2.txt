@@ -1,0 +1,29 @@
+Week 2 Notes
+
+
+System Calls
+ - Berfungsi untuk memberi akses atau utilitas hardware ke aplikasi
+ - List of syscall are in page 2 of man
+
+Library Calls
+ - A wrapper function to call system calls
+ - Not all library calls use system calls
+ - List of library calls are in page 3 of man
+
+User Commands
+ - A wrapper function for shell
+
+How an application use a system call:
+ - An Application make a library call(Standard C Library or other implementation)
+ - The library function sets up arguments for the necessary system call and switches to kernel mode
+ - The Trap Handler receive the request, and made the actual system call
+ - System call starts, finish its task, and return it to the Trap Handler
+ - The Trap Handler receive the results, pack the result for the application to use and switches to user mode
+ - The library function receive the results, if no errors are catched, then return it to the application
+ - The Application receive the results and continue
+
+Redirection ( > )
+ - Dumps output to a file
+
+Pipes ( | )
+ - Runs both programs
