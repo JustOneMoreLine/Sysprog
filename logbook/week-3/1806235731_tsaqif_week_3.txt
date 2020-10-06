@@ -1,0 +1,23 @@
+Week 3 Notes
+
+stat() command
+ - reads files information
+ - have other forms such:
+	- lstat() : can read links
+	- fstat() : can specifies which information to return
+
+Daemon process
+ - A process that runs in the background
+ - Doesn't have a file descriptor
+ - Can be created by fork-decouple-fork
+ - The name comes from a greek demon that works to uphold physics law, literally working in the "background"
+
+creat()
+ - Another form from open()
+ - Basically open with O_WRONLY, O_CREAT, and O_TRUNC flags enabled
+
+Sparse File
+ - A file which contains empty spaces or null called File Holes
+ - Rather than consuming memory to store those empty spaces, it keeps a metadata which part of the file is empty
+ - If a process reads a File Hole, it will instead reads the metadata
+ - Use to save extra memories, creating a "virtual" memory
