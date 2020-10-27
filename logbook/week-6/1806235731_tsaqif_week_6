@@ -1,0 +1,13 @@
+Week 6 Notes
+
+Makefile:
+ - A built-in feture in most GNU, use to automate compiling
+
+printf() vs write():
+ - printf() is buffered on stdout, while write is not
+
+fsync():
+ - use to synchronize file's storage state with it's user-space state
+
+fflush():
+ - use to signal flush
