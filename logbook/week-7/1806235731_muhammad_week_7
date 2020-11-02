@@ -21,3 +21,31 @@ zipping with tar:
 	- v : prints out process status, optional
 	- f : filename
 
+tree:
+ - use to show the directories,sub-directories and files structure
+
+PS1 formats:
+ - Color format:
+	- \[\033[<colour code>m\]
+ - Sunday, 02-11-2020:
+	- \D{%A, %d-%m-%Y}
+ - 08:01 AM:
+	- \D{%I:%M %p}
+ - sysprog-ova of user:
+	- \h of \u
+
+test:
+ - a command to test for existance or comparison
+ - there are 2 forms:
+	- test
+	- [[]]
+ - flags:
+	- -f = is it a file?
+	- -d = is it a directory?
+	- -eq = is it equal?
+	- -gt = greater than?
+	- -lt = less than?
+ - examples:
+	- test -f "/home"
+	- [ -f "/home" ]
+	- [ $VAR1 -gt 6 ]
