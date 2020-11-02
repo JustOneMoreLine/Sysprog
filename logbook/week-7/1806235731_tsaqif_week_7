@@ -1,0 +1,23 @@
+Week 7 Notes:
+
+change a file's owner:
+ - chown [new owner] [filename]
+
+special variables in bash:
+ - $1, $2, $3, .. -> argument(s) passed from left to right
+ - $@ -> an array of all passed argument(s)
+ - $# -> number of args passed
+
+#!/bin/bash -> a shebang, a must on every head of shell script, to tell what shell to use, in this case bash
+
+command1 || command2 -> command2 would only be executed if command1 fails
+command1 && command2 -> command2 would only be executed if command1 succed
+
+zipping with tar:
+ - tar [flags] [destination] [sources.....]
+ - flags :
+	- c : create
+	- z : set to gzip
+	- v : prints out process status, optional
+	- f : filename
+
