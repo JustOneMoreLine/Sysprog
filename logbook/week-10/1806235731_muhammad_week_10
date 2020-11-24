@@ -1,0 +1,13 @@
+Week 7 Notes:
+
+There are a lot of things I learn from this week worksheet, especially awk and signals.
+1.	Awk has 3 parts in it’s pattern which are begin, process, and after. With this 3 parts we can sort of code on how to print.
+2.	Begin part is used to as a pre-processing part before the actual processing. This means we can manipulate the strings before printing on the processing part.
+3.	Processing part is used to for the actual printing.
+4.	After part is used for after processing, such as clean up or echoing last messages. Unlike begin part, this part can also be utilized to do the actual printing just like the processing part.
+5.	There are many types of signals, a couple of them are:
+	a)	SIGINT; this signal is sent by Keyboard Interrupts (Ctrl+C) and  can be catched. On default it will ask the process to quit “softly”.
+	b)	SIGTERM; this signal is sent by user or operating system and can be catched. On default it will ask the process to quit “softly”.
+	c)	SIGQUIT; this signal is sent by user or operating system and can be catched. On default it will create a core dump file, a log that tracks process’ states during runtime, and ask the process to quit “softly”, but if it is sent by user, it will still create a core dump file but it wouldn’t ask the process to quit.
+	d)	SIGKILL; this signal is sent by authorized user or operating system and can not be catched. It will ask the process to stop immediately, without waiting for the process to do a clean up or signal their parent’s, which is why this option is usually use as a last resort because it could be fatal.
+	e)	USR1 and USR2; this signal is reserved to be use by user and can be catched. On default it will ask the process to quit “softly”.
